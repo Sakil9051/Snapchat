@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_4bef7797d2cfea",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE session ADD CONSTRAINT session_user_id_user_id_fk FOREIGN KEY (user_id) REFERENCES bb_3915pec63p2rd5h0j5f2h7ocbo_v3o9ub.\"user\" (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_4bef7797d2cfea",
+  "parent": "sql_14eb6375d87ee8",
+  "schema": "public",
+  "startedAt": "2025-05-19T12:03:59.326914Z"
+}

@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_752a7b928a56c4",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE videos (id uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL, title text NOT NULL, description text NOT NULL, video_url text NOT NULL, video_id text NOT NULL, thumbnail_url text NOT NULL, visibility text NOT NULL, user_id text NOT NULL, views int DEFAULT 0 NOT NULL, duration int, created_at timestamp DEFAULT now() NOT NULL, updated_at timestamp DEFAULT now() NOT NULL, CONSTRAINT videos_id_unique UNIQUE (id))"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_752a7b928a56c4",
+  "parent": "sql_0064bfb14df550",
+  "schema": "public",
+  "startedAt": "2025-05-19T12:03:58.414299Z"
+}

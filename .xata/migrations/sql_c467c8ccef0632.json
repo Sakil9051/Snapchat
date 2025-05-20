@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_c467c8ccef0632",
+    "operations": [
+      {
+        "sql": {
+          "up": "ALTER TABLE videos ADD CONSTRAINT videos_user_id_user_id_fk FOREIGN KEY (user_id) REFERENCES bb_3915pec63p2rd5h0j5f2h7ocbo_v3o9ub.\"user\" (id) ON DELETE CASCADE"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_c467c8ccef0632",
+  "parent": "sql_4bef7797d2cfea",
+  "schema": "public",
+  "startedAt": "2025-05-19T12:03:59.724233Z"
+}
